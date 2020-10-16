@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    background: #0984e3;
+    width: 100%;
+    height: 60px;
+    /* overflow: hidden; */
+
+}
+
+nav ul {
+    line-height: 60px;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+
+
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    /* display:inline-block; */
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+
+
+}
+
+nav ul li a:hover {
+    color: white;
+    background: red;
+    border-bottom: 2px solid red;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    /* margin-left: 10px; */
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -5px;
+    background: #0984e3;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 0.5s;
+}
+
+.drop li {
+    display: block;
+}
+
+.drop li a {
+    display: block;
+    /* font-size: 15px; */
+    padding: 0 !important;
+    transition: 0.5s;
+
+}
+
+.drop li a:hover {
+    /* border-bottom: 1px solid red; */
+    margin-left: 30px;
+    background-color: none !important;
+
+}
+
+ul li:hover .drop {
+    /* background: #000; */
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    transform-origin: top center;
+}
+
+ul li:hover>a {
+    background: red;
+}
+
+header {
+    background: url("../images/bg1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    background-blend-mode: multiply;
+}
+
+.container {
+    width: 1170px;
+
+    margin: auto;
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: red;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.content button {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 15px 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    background: none;
+    /* border: none; */
+    /* outline: none; */
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.content button:hover {
+    background: rgba(255, 0, 0, 0.658);
+}
+
+.c {
+    color: #000;
+    padding-top: 50px;
+}
+
+.row {
+    width: 1170px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.col {
+    width: 32%;
+    display: inline-block;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(135, 130, 135, 1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(135, 130, 135, 1);
+    box-shadow: 0px 3px 7px 0px rgba(135, 130, 135, 1);
+}
+
+.col span {
+    padding: 10px 20px;
+    background: #d63031;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.col-r {
+    margin-top: 50px;
+    /* width: 70%; */
+    box-sizing: border-box;
+    /* margin: 20px; */
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.col-r p {
+    text-align: justify;
+}
+
+.left {
+    width: 70%;
+    /* display: inline-block; */
+    float: left;
+}
+
+.right {
+    width: 30%;
+    /* display: inline-block; */
+    float: right;
+    margin-top: 50px;
+}
+
+.col-r img {
+    width: 300px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.row-2 {
+
+    width: 1170px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.col-r sup {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.685);
+    color: white;
+    border-radius: 5px;
+}
+
+.post {
+    margin-top: 10px;
+}
+
+.col-r::after,
+.row-2::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.notice ul {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.notice ul li {
+    list-style: none;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.blog-title,
+.title {
+    /* font-weight: 100px; */
+    font-size: 40px;
+    border-left: 2px solid red;
+    padding-left: 10px;
+}
